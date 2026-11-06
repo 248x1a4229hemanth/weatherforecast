@@ -1,0 +1,8 @@
+{
+  "name": "WeatherSphere – Smart Weather Forecasting Application",
+  "description": "Real-time weather tracking, detailed hourly and 10-day forecasts, interactive radar maps, air quality monitoring, and intelligent weather insights.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

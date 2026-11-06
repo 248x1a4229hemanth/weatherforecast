@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <linearGradient id="cloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <!-- Sun -->
+  <circle cx="310" cy="200" r="90" fill="url(#sun)" filter="url(#glow)" opacity="0.95" />
+  <!-- Sun Rays -->
+  <g stroke="#fbbf24" stroke-width="8" stroke-linecap="round" opacity="0.6">
+    <line x1="310" y1="80" x2="310" y2="95" />
+    <line x1="395" y1="115" x2="384" y2="126" />
+    <line x1="430" y1="200" x2="415" y2="200" />
+    <line x1="395" y1="285" x2="384" y2="274" />
+    <line x1="225" y1="115" x2="236" y2="126" />
+  </g>
+  <!-- Cloud -->
+  <path d="M170 360 C120 360 85 320 85 275 C85 235 115 200 155 195 C175 140 235 110 290 135 C325 150 350 185 350 225 C385 230 415 260 415 295 C415 330 385 360 350 360 Z" fill="url(#cloud)" filter="url(#glow)" />
+  <!-- Atmospheric Rain Drops -->
+  <g fill="#38bdf8" opacity="0.85">
+    <path d="M190 390 C185 400 180 412 180 420 A10 10 0 0 0 200 420 C200 412 195 400 190 390 Z" />
+    <path d="M250 390 C245 400 240 412 240 420 A10 10 0 0 0 260 420 C260 412 255 400 250 390 Z" />
+    <path d="M310 390 C305 400 300 412 300 420 A10 10 0 0 0 320 420 C320 412 315 400 310 390 Z" />
+  </g>
+</svg>
